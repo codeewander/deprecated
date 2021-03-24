@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.72">
 <link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Kira Yang Blog RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Kira Yang Blog Atom Feed"><title data-react-helmet="true">ES6箭頭函式 Arrow Function | Kira Yang</title><meta data-react-helmet="true" property="og:url" content="https://codeewander.github.io/docs/js-arrow-function"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="ES6箭頭函式 Arrow Function | Kira Yang"><meta data-react-helmet="true" name="description" content="箭頭函式的特性(與一般函式不同點）"><meta data-react-helmet="true" property="og:description" content="箭頭函式的特性(與一般函式不同點）"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://codeewander.github.io/docs/js-arrow-function"><link data-react-helmet="true" rel="alternate" href="https://codeewander.github.io/docs/js-arrow-function" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://codeewander.github.io/docs/js-arrow-function" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.b9c61d3f.css">
-<link rel="preload" href="/assets/js/styles.8997325f.js" as="script">
-<link rel="preload" href="/assets/js/runtime~main.670222cb.js" as="script">
-<link rel="preload" href="/assets/js/main.2b108be4.js" as="script">
-<link rel="preload" href="/assets/js/1.f45a574d.js" as="script">
-<link rel="preload" href="/assets/js/2.681a909f.js" as="script">
-<link rel="preload" href="/assets/js/3.55d3d612.js" as="script">
-<link rel="preload" href="/assets/js/1be78505.aec06b2a.js" as="script">
-<link rel="preload" href="/assets/js/74.4c75a8d0.js" as="script">
-<link rel="preload" href="/assets/js/935f2afb.f779d417.js" as="script">
-<link rel="preload" href="/assets/js/17896441.cd872608.js" as="script">
-<link rel="preload" href="/assets/js/d2cddeee.2f47bd51.js" as="script">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Kira Yang Blog Atom Feed"><title data-react-helmet="true">ES6箭頭函式 Arrow Function | Kira Yang</title><meta data-react-helmet="true" property="og:url" content="https://codeewander.github.io/docs/js-arrow-function"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="ES6箭頭函式 Arrow Function | Kira Yang"><meta data-react-helmet="true" name="description" content="箭頭函式的特性(與一般函式不同點）"><meta data-react-helmet="true" property="og:description" content="箭頭函式的特性(與一般函式不同點）"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://codeewander.github.io/docs/js-arrow-function"><link data-react-helmet="true" rel="alternate" href="https://codeewander.github.io/docs/js-arrow-function" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://codeewander.github.io/docs/js-arrow-function" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.361b3a31.css">
+<link rel="preload" href="/assets/js/styles.efa930b8.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.f025ead7.js" as="script">
+<link rel="preload" href="/assets/js/main.d5698d8d.js" as="script">
+<link rel="preload" href="/assets/js/1.8405a552.js" as="script">
+<link rel="preload" href="/assets/js/2.ce3d0db4.js" as="script">
+<link rel="preload" href="/assets/js/3.9dc78bf0.js" as="script">
+<link rel="preload" href="/assets/js/1be78505.11538d20.js" as="script">
+<link rel="preload" href="/assets/js/76.a5d99602.js" as="script">
+<link rel="preload" href="/assets/js/935f2afb.da136ae9.js" as="script">
+<link rel="preload" href="/assets/js/17896441.1b6a6886.js" as="script">
+<link rel="preload" href="/assets/js/d2cddeee.79d12dd3.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -37,16 +37,16 @@
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">cat</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token method function property-access" style="color:rgb(130, 170, 255)">sayCatName</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// undefined</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_Ue-o">Copy</button></div></div><p>同上的概念，此時箭頭函式中的 this 指向全域</p><ol start="3"><li>建構函式
 箭頭函式沒有 constructor，直接使用 new 時會拋出例外產生錯誤。</li></ol><div class="codeBlockContainer_K1bP"><div class="codeBlockContent_hGly js"><div tabindex="0" class="prism-code language-js codeBlock_23N8 thin-scrollbar"><div class="codeBlockLines_39YC" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> </span><span class="token function-variable function maybe-class-name" style="color:rgb(130, 170, 255)">Message</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token parameter">text</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:rgb(137, 221, 255)">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token keyword" style="font-style:italic">this</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token property-access">text</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> text</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block">
 </span></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">const</span><span class="token plain"> helloMessage </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">new</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">Message</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&quot;Hello World!&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">//&quot;TypeError: Message is not a constructor&quot;</span></div></div></div><button type="button" aria-label="Copy code to clipboard" class="copyButton_Ue-o">Copy</button></div></div><p>參考文章：</p><ul><li><a href="https://medium.com/better-programming/why-javascript-arrow-functions-are-useful-aa023bad403a" target="_blank" rel="noopener noreferrer">Why Are JavaScript Arrow Functions Useful?</a>(2020.02 updated)</li><li><a href="https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/" target="_blank" rel="noopener noreferrer">When (and why) you should use ES6 arrow functions — and when you shouldn’t</a></li><li><a href="https://pjchender.blogspot.com/2017/01/es6-arrow-function.html" target="_blank" rel="noopener noreferrer">[筆記] JavaScript ES6 中的箭頭函數（arrow function）及對 this 的影響</a></li></ul></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Docs pages navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/js-for"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« JS 遍歷方法 - for loop</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/js-scope"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Scope 作用域 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#箭頭函式的特性與一般函式不同點）" class="table-of-contents__link">箭頭函式的特性(與一般函式不同點）</a></li><li><a href="#arrow-function-的優點" class="table-of-contents__link">Arrow Function 的優點</a></li><li><a href="#什麼時候不適合使用-arrow-function" class="table-of-contents__link">什麼時候不適合使用 Arrow Function</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 Kira Yang. Built with Docusaurus.</div></div></div></footer></div>
-<script src="/assets/js/styles.8997325f.js"></script>
-<script src="/assets/js/runtime~main.670222cb.js"></script>
-<script src="/assets/js/main.2b108be4.js"></script>
-<script src="/assets/js/1.f45a574d.js"></script>
-<script src="/assets/js/2.681a909f.js"></script>
-<script src="/assets/js/3.55d3d612.js"></script>
-<script src="/assets/js/1be78505.aec06b2a.js"></script>
-<script src="/assets/js/74.4c75a8d0.js"></script>
-<script src="/assets/js/935f2afb.f779d417.js"></script>
-<script src="/assets/js/17896441.cd872608.js"></script>
-<script src="/assets/js/d2cddeee.2f47bd51.js"></script>
+<script src="/assets/js/styles.efa930b8.js"></script>
+<script src="/assets/js/runtime~main.f025ead7.js"></script>
+<script src="/assets/js/main.d5698d8d.js"></script>
+<script src="/assets/js/1.8405a552.js"></script>
+<script src="/assets/js/2.ce3d0db4.js"></script>
+<script src="/assets/js/3.9dc78bf0.js"></script>
+<script src="/assets/js/1be78505.11538d20.js"></script>
+<script src="/assets/js/76.a5d99602.js"></script>
+<script src="/assets/js/935f2afb.da136ae9.js"></script>
+<script src="/assets/js/17896441.1b6a6886.js"></script>
+<script src="/assets/js/d2cddeee.79d12dd3.js"></script>
 </body>
 </html>

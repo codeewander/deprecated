@@ -1,6 +1,6 @@
 ---
 title: ES6箭頭函式 Arrow Function
-id: arrow-function
+id: js-arrow-function
 ---
 
 ## 箭頭函式的特性(與一般函式不同點）
@@ -173,6 +173,7 @@ const helloMessage = new Message("Hello World!"); //"TypeError: Message is not a
 ```
 
 參考文章：
-[Why Are JavaScript Arrow Functions Useful?](https://medium.com/better-programming/why-javascript-arrow-functions-are-useful-aa023bad403a)(2020.02 updated)
-[When (and why) you should use ES6 arrow functions — and when you shouldn’t](https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/)
-[[筆記] JavaScript ES6 中的箭頭函數（arrow function）及對 this 的影響](https://pjchender.blogspot.com/2017/01/es6-arrow-function.html)
+
+- [Why Are JavaScript Arrow Functions Useful?](https://medium.com/better-programming/why-javascript-arrow-functions-are-useful-aa023bad403a)(2020.02 updated)
+- [When (and why) you should use ES6 arrow functions — and when you shouldn’t](https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/)
+- [[筆記] JavaScript ES6 中的箭頭函數（arrow function）及對 this 的影響](https://pjchender.blogspot.com/2017/01/es6-arrow-function.html)

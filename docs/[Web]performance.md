@@ -1,13 +1,11 @@
 ---
-id: web-performance
-title: 前端效能優化
+id: seo
+title: 使用結構化資料優化 SEO
 ---
 
-## SEO 優化 - 結構化資料
+結構化資料（通常稱為 Schema 或是 Schema.org）是利用 Google、Bing、Yandex 和 Yahoo!所共同認可的特定標籤或詞彙加到 HTML 中以改進頁面在搜尋結果顯示方式的作法。
 
-在網頁寫上註釋，讓搜尋引擎可以更容易理解網頁內容資訊。
-
-Google 支援三種方式
+Google 目前支援三種結構化資料格式
 
 1. JSON-LD(主要推薦)：使用 script 方式嵌入。
 
@@ -42,7 +40,3 @@ Google 支援三種方式
 3. RDFa
 
 參考文件：[Google 結構化資料](https://developers.google.com/search/docs/guides/intro-structured-data)
-
-## 圖片優化
-
-1. 延遲載入 lazy loading

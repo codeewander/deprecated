@@ -1,6 +1,6 @@
 ---
 id: js-for
-title: JavaScript 遍歷方法 - for 家族
+title: JS 遍歷方法 - for loop
 ---
 
 本篇文章主要比較 for loop、for...in、for...of、forEach 的使用情境與差別。

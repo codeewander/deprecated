@@ -1,24 +1,8 @@
 ---
 id: web-design
 title: 切版觀念
+slug: /
 ---
-
-## HTML5 語意化標籤
-
-```
-<header>  頁首
-<nav>     導航欄(連結換頁)
-<main>    主要區塊
-<article> 文章區塊
-<section> 區塊
-<aside>   側欄
-<footer>  頁尾
-<time>    時間
-<mark>    強調內容
-<figure>  圖像
-<figcaption> 圖像標題
-<cite>    引用其他文獻
-```
 
 ## 排版原則
 

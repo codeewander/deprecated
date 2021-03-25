@@ -1,7 +1,69 @@
 ---
 id: js-keywords
-title: JavaScript 十個單字
+title: JS keywords
 ---
+
+## Scope 作用域
+
+> Scope is the accessibility of variables. Outside of its scope, the variable is inaccessible. JS have two lexical scopes : global and function
+
+- 變數在程式中可被存取的範圍，可分為`區域變數`和`全域變數`
+
+![](https://i.imgur.com/9HKJxtN.png)
+
+舉例來說，上圖中變數 a 為 global scope，而 x, b 和 bar 的 scope 則是 function foo，c,y 的 scope 為 function bar。
+
+[更多關於 Scope 整理](js-scope.md)
+
+## Hoisting 提升
+
+> JavaScript’s default behavior of moving declarations to the top.
+
+```javascript
+var a = 0;
+function a() {}
+a(); // Uncaught TypeError: a is not a function
+```
+
+```javascript
+// 實際上
+function a() {} //function 先提升
+var a = undefined;
+a = 0;
+a();
+```
+
+#### 延伸問題: 那 let 跟 const 有 hoisting 嗎？
+
+> All declarations are “hoisted”, the difference between var/function declarations and let/const/class declarations is the initialization.
+
+還是有 hoisting ，只是初始化行為跟 var 不同
+
+- var: 變數會被初始化為 undefined
+- let , const : 不會先被初始化所以在賦值之前的 Temporal Dead Zone(TDZ, 時間死區) 取值會發生錯誤。
+
+相關閱讀：
+[我知道你懂 hoisting，可是你了解到多深？](https://blog.techbridge.cc/2018/11/10/javascript-hoisting/)
+
+## Prototype 原型
+
+> A prototype is an object that can inherit other object properties.
+> Every JavaScript object has a prototype. All JavaScript objects inherit their properties and methods from their prototype.
+
+透過「原型」繼承可以讓本來沒有某個屬性的物件去存取其他物件的屬性。
+
+![](https://i.imgur.com/zpF3LW1.png)
+
+## this
+
+> Depends on how the function is called. the JavaScript this keyword refers to the object it belongs to.
+
+> 每一個 function 在被執行的時候都會有一個 reference 指向所屬的環境，這就是 this，有四種函數調用方法
+
+- In normal function calls 一般呼叫涵式: this refers to the global object.
+- Within methods on objects 方法調用: this refers to the owner object.
+- Within an object that has been constructed 建構函式調用: this refers to the object that has been constructed
+- A function invoked with .call, .apply, or bind 隱式調用: can refer this to any object.
 
 ## Array 陣列
 
@@ -71,6 +133,9 @@ title: JavaScript 十個單字
 
 ## Closure 閉包
 
+> Closure is when a function “remembers” its lexical scope even when the function is executed outside that lexical scope
+
+- 閉包是捕捉了外部函式變數（或使之繼續存活）的函式，它包含了一個函式，以及函式被建立時所在的環境
 - 在 function 產生的當下記住語彙環境，在執行環境消失後仍可使用
 - 目的：避免全域污染，讓 function 能夠有 private 變數(ES6 可使用 let)
 - 用程式碼來解釋閉包：

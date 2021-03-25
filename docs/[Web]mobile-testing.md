@@ -1,5 +1,5 @@
 ---
-title: 在 local 環境用手機快速測試和 debug
+title: 本地環境手機測試和 debug
 id: mobile-testing
 ---
 

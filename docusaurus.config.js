@@ -1,32 +1,46 @@
 module.exports = {
   title: 'Kira Yang',
-  tagline: 'Here is how I grow my hippocampus',
+  tagline: 'Here is how I grow my hippocampus :)',
   url: 'https://codeewander.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'codeewander', // Usually your GitHub org/user name.
-  projectName: 'docusaurusBlog', // Usually your repo name.
+  projectName: 'codeewander.github.io', // Usually your repo name.
   themeConfig: {
+    hideSidebar: true,
     navbar: {
       title: 'Kira Yang',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo-lightMode.svg',
+        href: 'https://codeewander.github.io',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          to: 'docs/html/html-tags',
           position: 'left',
+          label: 'Tech Notes',
         },
-        // {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'docs/creative-coding/data-visualization',
+          position: 'left',
+          label: 'Creative Coding',
+        },
+        {
+          href: 'https://www.linkedin.com/in/chang-ru-yang/',
+          position: 'right',
+          className: 'linkedIn',
+          'aria-label': 'LinkedIn',
+          external: true 
+        },
         {
           href: 'https://github.com/codeewander',
-          label: 'GitHub',
           position: 'right',
+          className: 'github-link',
+          'aria-label': 'GitHub',
+          external: true 
         },
       ],
     },
@@ -86,9 +100,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          path: 'docs',
+          // routeBasePath: '/docs'
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
